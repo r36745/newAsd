@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$('#formPage').on('pageinit', function() {
 
 function makeCats() {
 	var formTag = $('form'),
@@ -105,7 +105,6 @@ function makeItemLinks(key, linksLi) {
 	editLink.key = key;
 	var editText = "Edit Profile";
 	$(editLink).click(function() {
-
 		editItem(key);
 	});
 	editLink.html(editText);
@@ -126,19 +125,19 @@ function makeItemLinks(key, linksLi) {
 }
 
 function editItem(key) {
-	var value = localStorage.getItem(this.key);
+	var value = localStorage.getItem(key);
 	var item = JSON.parse(value);
-
 	toggleControls('off');
+	$('#groups').val(item.group[1]);
+	$('#fname').val(item.fname[1]);
 	
-	$('#groups').val("");
-	$('fname').val("steve");
+
 	var radios = document.forms[0].sex;
 	for(var i=0; i<radios.length; i++) {
 		if(radios[i].value == "Male" && item.sex[1] == "Male") {
-			radios[i].attr("checked", "checked");
+			$(radios).attr("checked", "checked");
 		} else if(radios[i].value == "Female" && item.sex[1] == "Female") {
-			radios[i].attr("checked", "checked");
+			$(radios).attr("checked", "checked");
 		}
 	}
 }
@@ -184,6 +183,7 @@ function newItem(){}
 	
 	$('#submit').click(function() {
 		storeData();
+		window.location.reload();
 		
 	});
 
