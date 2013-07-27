@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="LifeTime Loser Weight-Loss Support Team." />
+        <meta name="keywords" content="diet, health, workout, weight-loss" />
+        <meta name="robots" content="index, follow" />
+		<title>LifeTime Loser</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+        <script src="libs/modernizr.custom.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed" data-theme="">
+				<h2>LifeTime Loser<h2>
+			</div>	
+				<div id="logo" >
+					<a href="file:///Users/stevierose/Desktop/lifeTimeLoser/test.html"><img id="crunch" class="shadow" src="images/crunch.png"></a>
+				</div>
+			<div data-role="content">
+				<h2>Welcome to the Journey!</h2>
+				<div>
+					<h3>Participation</h3>
+					<p>Entry Fee: $10</p>
+					<p>penalty (weekly check-in): $1 per lb.</p>
+					<p>Start Date: 7/1/13</p>	
+					<p>Time table: 8 wks</p>
+				</div>
+				<div id="calender" class="">
+					<img src="images/calender.png">
+				</div>
+				<div class="">
+					<h2 id="mission">Mission</h2>
+					<h4 id="blurb">(To improve everyday...of course!)</h4>
+					<p>
+					I found out a small truth recently, we're not getting any younger...fat stores in places that I didn't know was possible and it's harder to stay active and healthy, with the daily grind of our life.  Wanting to look better is always in the foreground of my mind, but the question bares, how to consistently do so. I've found that being accountable to myself in silence is not as a effective, however, having everyone's supportive and encouraging eye, could make me follow up on my words. If you're anything like me and lack some motivation, maybe this is the place for you. This is an 8-week program, where you list weekly and a final goals. The idea of this program is to fight for realistic goals, not something that is unobtainable, leaving an easy exit to quit. I want all of us to be around for another 40+ years, and it takes good mental and physical health. The goal of this program, is that we continue and never stop. Come join the LifeTime Loser, and start a great journey.
+					</p>
+				</div>
+				<div>
+					<a href="#formPage" data-role="button">Join Now!</a>
+				</div>
+            </div>		
+				<div data-role="footer" data-position="fixed" data-id="lloser">
+					<nav data-role="navbar">
+						<ul id="nav">
+							<li><a href="#home" data-icon="home">Home</a></li>
+							<li><a href="#formPage" data-icon="star">About Us</a></li>
+							<li><a href="#details" data-icon="star">Details</a></li>
+						</ul>
+					</nav>
+				</div>
+				<footer><p>&copy; 2013 All rights reserved by me!</p></footer>
+		</div>
+		<div id="formPage" data-role="page">
+			<div data-role="header" data-position="fixed" data-theme="">
+				<h2>Join Up!</h2>
+			</div>
+			<div data-role="content">
+				<a id="displayLink" href="#">Display Data</a>
+				<a id="clearLink" href="#">Clear Data</a>
+				<a id="update" href="#formPage" style="display:none;">Update</a>
+				<form action="" id="lifeForm">
+					<div data-role="fieldcontain">
+						<li id="select"><label for="group">*Add to Group</label><br/></li>
+						<label for="fname">First Name:</label>
+						<input type="text" name="fname" id="fname">
+						<li><input type="radio" id="male" value="Male" name="sex"/><label for="male">Male</label></li>
+						<li><input type="radio" id="female" value="Female" name="sex"/><label for="female">Female</label></li>
+					<!---	<li><input type="checkbox" id="fav" value="No" class="checkbox"/><label for="fav">Save as Favorite</label></li>-->
+					</div>
+					<input id="submit" type="button" value="Submit"/>
+				</form>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="lloser">
+				<nav data-role="navbar">
+					<ul id="nav">
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#formPage" data-icon="star">About Us</a></li>
+						<li><a href="#details" data-icon="star">Details</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+		<div data-role="page" id="details">
+				<div data-role="header" data-position="fixed">
+					<h2>Data Details</h2>
+				</div>
+				<div id="myContent" data-role="content">
+					
+				</div>
+				<div data-role="footer" data-position="fixed" data-id="lloser">
+					<nav data-role="navbar">
+						<ul id="nav">
+							<li><a href="#home" data-icon="home">Home</a></li>
+							<li><a href="#formPage" data-icon="star">About Us</a></li>
+							<li><a href="#details" data-icon="star">Details</a></li>
+						</ul>
+					</nav>
+				</div>
+		</div>
+		
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script type="text/javascript" src="libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
