@@ -61,6 +61,9 @@ function storeData() {
 	var item 				={};
 		item.group 			=['Groups:', $('#groups').val()];
 		item.fname			=['First Name:', $('#fname').val()];
+		item.lname			=['Last Name:', $('#lname').val()];
+		item.cWeight		=['Current Weight:', $('#cWeight').val()];
+		item.notes			=['Bio Notes:', $('#notes').val()];
 		item.sex 			=['Sex:', sexValue];
 		/*item.favorite 		=['Favorite:', favoriteValue];*/
 	localStorage.setItem(id, JSON.stringify(item));
@@ -130,6 +133,10 @@ function editItem(key) {
 	toggleControls('off');
 	$('#groups').val(item.group[1]);
 	$('#fname').val(item.fname[1]);
+	$('#lname').val(item.lname[1]);
+	$('#cWeight').val(item.cWeight[1]);
+	$('#notes').val(item.notes[1]);
+
 	
 
 	var radios = document.forms[0].sex;
@@ -155,7 +162,7 @@ function clearLocal() {
 }
 
 
-function newItem(){}
+
 
 
 
@@ -171,7 +178,7 @@ function newItem(){}
 
 
 	
-	$('#displayLink').click(function() {
+	$('#displayLink').on('click', function() {
 		getData();
 
 		
